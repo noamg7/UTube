@@ -1,31 +1,9 @@
 var app = angular.module('Tube', []);
 
-app.run(function () {
-  var tag = document.createElement('script');
-  tag.src = "http://www.youtube.com/iframe_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+app.controller('CtrlTube', function($scope) {
+  $scope.code = 'BS0T8Cd4UhA';
 });
-
-app.config( function ($httpProvider) {
-  delete $httpProvider.defaults.headers.common['X-Requested-With'];
-});
-
-app.controller('myYoutube', function($scope) {
-//  $scope.code = 'BS0T8Cd4UhA';
-$scope.search = function () {
-   $http.get('https://www.googleapis.com/youtube/v3/search', {
-     params: {
-       key: 'AIzaSyD2K6OooNWMPgEWlkAkgAIRctksFyKk1vY',
-       type: 'video',
-       maxResults: '8',
-       part: 'id,snippet',
-       fields: 'items/id,items/snippet/title,items/snippet/description,items/snippet/thumbnails/default,items/snippet/channelTitle',
-       q: this.query
-     }
-   })
-});
-app.directive('controller', function($sce) {
+app.directive('myYoutube', function($sce) {
   return {
     restrict: 'EA',
     scope: { code:'=' },
@@ -41,3 +19,27 @@ app.directive('controller', function($sce) {
     }
   };
 });
+
+// app.run(function () {
+//   var tag = document.createElement('script');
+//   tag.src = "http://www.youtube.com/iframe_api";
+//   var firstScriptTag = document.getElementsByTagName('script')[0];
+//   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+// });
+
+// app.config( function ($httpProvider) {
+//   delete $httpProvider.defaults.headers.common['X-Requested-With'];
+// });
+
+// $scope.search = function () {
+//    $http.get('https://www.googleapis.com/youtube/v3/search', {
+//      params: {
+//        key: 'AIzaSyD2K6OooNWMPgEWlkAkgAIRctksFyKk1vY',
+//        type: 'video',
+//        maxResults: '8',
+//        part: 'id,snippet',
+//        fields: 'items/id,items/snippet/title,items/snippet/description,items/snippet/thumbnails/default,items/snippet/channelTitle',
+//        q: this.query
+//      }
+//    })
+// });
