@@ -8,8 +8,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
 </head>
 <body ng-controller='CtrlTube'>
-  <input type="text" class="form-control" ng-model="myYoutube">
+  <input type="text" class="form-control" name="q" data-ng-model="query">
   <button type="button" ng-click="myYoutube()">SearchTube</button>
+  <div my-youtube code="ride"></div>
   <div my-youtube code="code"></div>
 <script src='app.js'></script>
 </body>
