@@ -21,12 +21,29 @@ $scope.search = function () {
    });
  };
   $scope.code = 'BS0T8Cd4UhA';
-  $scope.ride = 'ThlhSnRk21E';
+  $scope.jive = '_8yGGtVKrD8';
+  $scope.jump = 'q4V8pbg3rNU';
 });
 
 app.config( function ($httpProvider) {
   delete $httpProvider.defaults.headers.common['X-Requested-With'];
 });
+
+// app.controller('VideosController', function ($scope, $http, $log, VideosService) {
+//
+//     init();
+//
+//     function init() {
+//       $scope.youtube = VideosService.getYoutube();
+//       $scope.results = VideosService.getResults();
+//       $scope.playlist = true;
+//     }
+//
+//     $scope.launch = function (id, title) {
+//       VideosService.launchPlayer(id, title);
+//       VideosService.archiveVideo(id, title);
+//       $log.info('Launched id:' + id + ' and title:' + title);
+//     };
 
 
 app.directive('myYoutube', function($sce) {
