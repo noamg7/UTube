@@ -4,18 +4,22 @@
   <meta charset="UTF-8">
   <title>YouTube</title>
   <script>document.write('<base href="' + document.location + '" />');</script>
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css"> -->
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body ng-controller='CtrlTube'>
   <input type="text" class="form-control" name="q" data-ng-model="query">
-  <button type="button" ng-click="myYoutube()">SearchTube</button>
-<div>
-  <div my-youtube code="code"></div>
-  <div my-youtube code="jive"></div>
-  <div my-youtube code="jump"></div>
-</div>
+  <button type="button" ng-click="myYoutube">SearchTube</button>
+  <div class="video">
+    <img class="video" ng-search="{{$scope.code}}">
+  </div>
+  <br>
+  <div>
+    <div my-youtube code="code"></div>
+    <div my-youtube code="jive"></div>
+    <div my-youtube code="jump"></div>
+  </div>
 <script src='app.js'></script>
 </body>
 </html>
