@@ -6,8 +6,8 @@ app.run(function () {
   var firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 });
-
-  // app.controller('CtrlTube', function ($scope, Videos) {
+  // app.controller('VideosController', function ($scope, $http, $log, VideosService) {
+  app.controller('CtrlTube', function ($scope, $http, $log) {
   //
   //    init();
   //
@@ -48,8 +48,8 @@ app.config( function ($httpProvider) {
   delete $httpProvider.defaults.headers.common['X-Requested-With'];
 });
 
-app.directive('myYoutube', function($sce) {
-  $scope.search.post('<iframe style="overflow:hidden;height:350px;width:450px" width="450px" height="350px" src="{{code}}" frameborder="0" allowfullscreen></iframe>')
+app.directive('myYoutube', function($sce, $scope) {
+  $scope.post(src="{{$scope.code}}")
   return {
     restrict: 'EA',
     scope: { code:'=' },
