@@ -34,14 +34,11 @@ $scope.search = function () {
        type: 'video',
        maxResults: '8',
        part: 'id,snippet',
-       fields: 'items/id,items/snippet/title,items/snippet/description,items/snippet/thumbnails/default,items/snippet/channelTitle',
-       q: this.query
+  //     fields: 'items/id,items/snippet/title,items/snippet/description,items/snippet/thumbnails/default,items/snippet/channelTitle',
+  //     q: this.query
      }
    });
  };
-  // $scope.code = 'BS0T8Cd4UhA';
-  // $scope.jive = '_8yGGtVKrD8';
-  // $scope.jump = 'q4V8pbg3rNU';
 });
 
 app.config( function ($httpProvider) {
@@ -63,4 +60,7 @@ app.directive('myYoutube', function($sce) {
         });
     }
   };
+  // $scope.code = 'BS0T8Cd4UhA';
+  // $scope.jive = '_8yGGtVKrD8';
+  // $scope.jump = 'q4V8pbg3rNU';
 });
