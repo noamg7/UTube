@@ -30,7 +30,7 @@ app.controller('CtrlTube', function($scope, $http) {
 $scope.search = function () {
    $http.get('https://www.googleapis.com/youtube/v3/search', {
      params: {
-       key: 'AIzaSyD2K6OooNWMPgEWlkAkgAIRctksFyKk1vY',
+       key: 'AIzaSyCKVJv8HQTENNu6_1NBjgnHNrYRqeLxdEs',
        type: 'video',
        maxResults: '8',
        part: 'id,snippet',
