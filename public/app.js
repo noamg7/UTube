@@ -7,7 +7,7 @@ app.run(function () {
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 });
   // app.controller('VideosController', function ($scope, $http, $log, VideosService) {
-  app.controller('CtrlTube', function ($scope, $http, $log) {
+  // app.controller('CtrlTube', function ($scope, $http, $log) {
   //
   //    init();
   //
@@ -26,7 +26,7 @@ app.run(function () {
   //   $log.info('Launched id:' + id + ' and title:' + title);
   // };
 
-app.controller('CtrlTube', function($scope) {
+app.controller('CtrlTube', function($scope, $http) {
 $scope.search = function () {
    $http.get('https://www.googleapis.com/youtube/v3/search', {
      params: {
@@ -39,17 +39,16 @@ $scope.search = function () {
      }
    });
  };
-  $scope.code = 'BS0T8Cd4UhA';
-  $scope.jive = '_8yGGtVKrD8';
-  $scope.jump = 'q4V8pbg3rNU';
+  // $scope.code = 'BS0T8Cd4UhA';
+  // $scope.jive = '_8yGGtVKrD8';
+  // $scope.jump = 'q4V8pbg3rNU';
 });
 
 app.config( function ($httpProvider) {
   delete $httpProvider.defaults.headers.common['X-Requested-With'];
 });
 
-app.directive('myYoutube', function($sce, $scope) {
-  $scope.post(src="{{$scope.code}}")
+app.directive('myYoutube', function($sce) {
   return {
     restrict: 'EA',
     scope: { code:'=' },

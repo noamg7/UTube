@@ -5,15 +5,15 @@
   <title>YouTube</title>
   <script>document.write('<base href="' + document.location + '" />');</script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.js"></script>
   <link rel="stylesheet" href="main.css">
 </head>
 <body ng-controller='CtrlTube'>
   <input type="text" class="form-control" name="q" data-ng-model="query">
-  <button type="button" ng-click="myYoutube">SearchTube</button>
-  <div class="video">
+  <button type="button" ng-click="search()">SearchTube</button>
+  <!-- <div class="video">
     <video class="video" ng-search="src="https://www.youtube.com/embed/S8MHV03vqC0'{{$scope.code}}'>
-  </div>
+  </div> -->
   <br>
   <div>
     <div my-youtube code="code"></div>
