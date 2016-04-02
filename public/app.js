@@ -34,9 +34,12 @@ $scope.search = function () {
        type: 'video',
        maxResults: '8',
        part: 'id,snippet',
-  //     fields: 'items/id,items/snippet/title,items/snippet/description,items/snippet/thumbnails/default,items/snippet/channelTitle',
-  //     q: this.query
+       fields: 'items/id,items/snippet/title,items/snippet/description,items/snippet/thumbnails/default,items/snippet/channelTitle',
+       q: this.query
      }
+   })
+   .then(function(response){
+     console.log(response.data.items[0].id.videoId)
    });
  };
 });
