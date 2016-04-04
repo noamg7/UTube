@@ -64,7 +64,7 @@ app.directive('myYoutube', function($sce) {
         });
     }
   };
-  $scope.code = 'BS0T8Cd4UhA';
-  $scope.jive = '_8yGGtVKrD8';
-  $scope.jump = 'q4V8pbg3rNU';
+  // $scope.code = 'BS0T8Cd4UhA';
+  // $scope.jive = '_8yGGtVKrD8';
+  // $scope.jump = 'q4V8pbg3rNU';
 });
