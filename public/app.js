@@ -39,8 +39,9 @@ $scope.search = function () {
      }
    })
    .then(function(response){
-     $scope.vidio = 'videoId'
+    //  $scope.response = 'videoId'
      console.log(response.data.items[0].id.videoId)
+     $scope.response = "videoId"
    });
  };
 });
