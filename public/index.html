@@ -10,22 +10,32 @@
 </head>
 <body ng-controller='CtrlTube'>
   <div>
-  <input type="text" class="form-control" name="q" data-ng-model="query">
-  <button type="button" ng-click="search()">SearchTube</button>
+    <div>
+      <input type="text" class="form-control" name="q" data-ng-model="query">
+      <button type="button" ng-click="search()">SearchTube</button>
+    </div>
   </div>
   <br>
   <div class="row">
-    <div id="videoId" my-youtube code="videoId" class="col-md-6"></div>
+    <div id="videoId" class="col-md-5">
+      <center><div my-youtube code="videoId"></div></center>
+    </div>
   <myYoutube></myYoutube>
-    <div id="go"  my-youtube code="go" class="col-md-5 col-md-offset-1"></div>
+    <div id="go"  class="col-md-5 col-md-offset-1">
+      <center><div my-youtube code="go"></div></center>
+      </div>
   </div>
   <br>
     <div class="row">
-    <div id="jive" my-youtube code="jive" class="col-md-5 col-md-offset-7"></div>
+    <div id="jive" class="col-md-5 col-md-offset-6">
+      <center><div my-youtube code="jive"div></center>
+    </div>
   </div>
   <br>
     <div class="row">
-    <div id="jump" my-youtube code="jump" class="col-md-5 col-md-offset-7"></div>
+    <div id="jump" class="col-md-5 col-md-offset-6">
+      <center><div my-youtube code="jump"></div></center>
+    </div>
     </div>
   </div>
 <script src='app.js'></script>
