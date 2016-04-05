@@ -1,3 +1,19 @@
 body{
-  
+  background-image: url(http://previews.123rf.com/images/fyletto/fyletto0708/fyletto070800031/1545674-Music-sheet-reverse-with-notation-musial-background-Stock-Photo.jpg);
+  background-size: cover;
+}
+
+div#videoId{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2jVUc6v2m774wjeXC6yxcrgHXCWuMi7mG6UB71olha158Ek2m);
+  background-size: cover;
+}
+div#go{
+  background-image: url(http://cdn.playbuzz.com/cdn/87cbe281-90fc-407e-9717-21730a20e117/053a46a0-95fa-4cae-a136-8f28f1fdb687_560_420.jpg);
+}
+
+div#jive{
+  background-image: url(https://songbook1.files.wordpress.com/2010/11/cab-calloway-and-his-orchestra-1936-1-m.jpg);
+}
+div#jump{
+  background-image: url(http://a.dilcdn.com/bl/wp-content/uploads/sites/2/2013/08/jungle-book-band.jpg);
 }

@@ -9,20 +9,24 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body ng-controller='CtrlTube'>
+  <div>
   <input type="text" class="form-control" name="q" data-ng-model="query">
   <button type="button" ng-click="search()">SearchTube</button>
-  <!-- <div class="video">
-    <video class="video" ng-search="src="https://www.youtube.com/embed/S8MHV03vqC0'{{$scope.code}}'>
-  </div> -->
-  <br>
-  <div>
-    <div my-youtube code="videoId"></div>
   </div>
+  <br>
+  <div class="row">
+    <div id="videoId" my-youtube code="videoId" class="col-md-6"></div>
   <myYoutube></myYoutube>
-  <div>
-    <div my-youtube code="go"></div>
-    <div my-youtube code="jive"></div>
-    <div my-youtube code="jump"></div>
+    <div id="go"  my-youtube code="go" class="col-md-5 col-md-offset-1"></div>
+  </div>
+  <br>
+    <div class="row">
+    <div id="jive" my-youtube code="jive" class="col-md-5 col-md-offset-7"></div>
+  </div>
+  <br>
+    <div class="row">
+    <div id="jump" my-youtube code="jump" class="col-md-5 col-md-offset-7"></div>
+    </div>
   </div>
 <script src='app.js'></script>
 </body>

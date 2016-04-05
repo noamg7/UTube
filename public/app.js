@@ -7,26 +7,6 @@ app.run(function () {
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 });
 
-  // app.controller('VideosController', function ($scope, $http, $log, VideosService) {
-  // app.controller('CtrlTube', function ($scope, $http, $log) {
-  //
-  //    init();
-  //
-  //    function init() {
-  //   $scope.youtube = VideosService.getYoutube();
-  //   $scope.results = VideosService.getResults();
-  //   $scope.upcoming = VideosService.getUpcoming();
-  //   $scope.history = VideosService.getHistory();
-  //   $scope.playlist = true;
-  // }
-  //
-  // $scope.launch = function (id, title) {
-  //   VideosService.launchPlayer(id, title);
-  //   VideosService.archiveVideo(id, title);
-  //   VideosService.deleteVideo($scope.upcoming, id);
-  //   $log.info('Launched id:' + id + ' and title:' + title);
-  // };
-
 app.controller('CtrlTube', function($scope, $http) {
 $scope.search = function () {
    $http.get('https://www.googleapis.com/youtube/v3/search', {
