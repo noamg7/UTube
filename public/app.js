@@ -6,6 +6,7 @@ app.run(function () {
   var firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 });
+
   // app.controller('VideosController', function ($scope, $http, $log, VideosService) {
   // app.controller('CtrlTube', function ($scope, $http, $log) {
   //
@@ -40,9 +41,12 @@ $scope.search = function () {
    })
    .then(function(response){
      console.log(response.data.items[0].id.videoId)
-     $scope.response = "videoId"
+     $scope.videoId = response.data.items[0].id.videoId;
    });
  };
+   $scope.go = 'BS0T8Cd4UhA';
+   $scope.jive = '_8yGGtVKrD8';
+   $scope.jump = 'q4V8pbg3rNU';
 });
 
 app.config( function ($httpProvider) {
@@ -56,7 +60,7 @@ app.directive('myYoutube', function($sce) {
     replace: true,
     template: '<div style="height:350px;"><iframe style="overflow:hidden;height:350px;width:450px" width="450px" height="350px" src="{{url}}" frameborder="0" allowfullscreen></iframe></div>',
     link: function (scope) {
-        console.log('code');
+//       console.log('code');
         scope.$watch('code', function (newVal) {
            if (newVal) {
                scope.url = $sce.trustAsResourceUrl("http://www.youtube.com/embed/" + newVal);
@@ -64,7 +68,4 @@ app.directive('myYoutube', function($sce) {
         });
     }
   };
-  // $scope.code = 'BS0T8Cd4UhA';
-  // $scope.jive = '_8yGGtVKrD8';
-  // $scope.jump = 'q4V8pbg3rNU';
 });
