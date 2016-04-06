@@ -1,9 +1,24 @@
 body{
-  background-image: url(http://naruto忍コレクション攻略.com/wp-content/uploads/2015/09/wpid-minato-namikaze.jpg);
-  background-size: contain;
+  background-image: url(http://pre00.deviantart.net/e53b/th/pre/f/2012/193/6/e/minato_namikaze_render_by_kangaroogi-d56xob5.png);
+  background-size: cover;
 }
 input{
-
+ width: 300px;
+ margin-left: 15px;
+}
+h1{
+  color: #fff;
+  background-color: #333;
+  text-shadow:#fff 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px;
+  border-radius: 10px;
+  width: 600px;
+}
+h2{
+  color: #fff;
+  background-color: #232323;
+  text-shadow:0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18, 0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
+  width: 550px;
+  border-radius: 5px;
 }
 button{
   color: black;
@@ -17,8 +32,14 @@ div#videoId{
 div#go{
   background-image: url(http://cdn.playbuzz.com/cdn/87cbe281-90fc-407e-9717-21730a20e117/053a46a0-95fa-4cae-a136-8f28f1fdb687_560_420.jpg);
 }
+div#Kakashi{
+  background-image: url(http://i2.ytimg.com/vi/Pj2iCeoIxFA/0.jpg);
+}
 div#jive{
   background-image: url(https://songbook1.files.wordpress.com/2010/11/cab-calloway-and-his-orchestra-1936-1-m.jpg);
+}
+div#Green{
+  background-image: url(https://lh6.ggpht.com/zSn_kg7hiELA7K2cVf60QjrNO8tMbhJrddsrGmTdQQtIb9vl891-Unfg1ZGdeZfWE4U_VSZD);
 }
 div#jump{
   background-image: url(http://a.dilcdn.com/bl/wp-content/uploads/sites/2/2013/08/jungle-book-band.jpg);

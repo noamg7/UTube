@@ -7,15 +7,15 @@ app.run(function () {
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 });
 
-app.controller('CtrlTube', function($scope, $http) {
+app.controller('CtrlTube', function($scope, $http){
+$scope.videoId = '';
 $scope.search = function () {
    $http.get('https://www.googleapis.com/youtube/v3/search', {
      params: {
        key: 'AIzaSyCKVJv8HQTENNu6_1NBjgnHNrYRqeLxdEs',
        type: 'video',
-       maxResults: '8',
        part: 'id,snippet',
-       fields: 'items/id,items/snippet/title,items/snippet/description,items/snippet/thumbnails/default,items/snippet/channelTitle',
+    //   fields: 'items/id,items/snippet/title,items/snippet/description,items/snippet/thumbnails/default,items/snippet/channelTitle',
        q: this.query
      }
    })
@@ -26,11 +26,9 @@ $scope.search = function () {
  };
    $scope.go = 'BS0T8Cd4UhA';
    $scope.jive = '_8yGGtVKrD8';
+   $scope.Kakashi = 'ndwGLN_ZWso';
    $scope.jump = 'q4V8pbg3rNU';
-});
-
-app.config( function ($httpProvider) {
-  delete $httpProvider.defaults.headers.common['X-Requested-With'];
+   $scope.Green = 'Ee_uujKuJMI';
 });
 
 app.directive('myYoutube', function($sce) {

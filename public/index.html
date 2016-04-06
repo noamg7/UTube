@@ -9,35 +9,45 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body ng-controller='CtrlTube'>
+  <center><h1>Welcome to Noamg7 UTube Version</h1></center>
+  <center><h2>Warning!!! Search Results May Vary!!!</h2></center>
   <div>
     <div>
-      <input type="text" class="form-control" name="q" data-ng-model="query">
+      <input type="text" id="Usearch" name="q" data-ng-model="query">
       <button type="button" ng-click="search()">SearchTube</button>
     </div>
   </div>
   <br>
   <div class="row">
     <div id="videoId" class="col-md-5">
-      <center><div my-youtube code="videoId"></div></center>
+      <div ng-if='videoId'>
+        <center><div my-youtube code="videoId"></div></center>
+      </div>
     </div>
   <myYoutube></myYoutube>
-    <div id="go"  class="col-md-5 col-md-offset-1">
+    <div id="go"  class="col-md-5 col-md-offset-2">
       <center><div my-youtube code="go"></div></center>
-      </div>
-  </div>
-  <br>
-    <div class="row">
-    <div id="jive" class="col-md-5 col-md-offset-6">
-      <center><div my-youtube code="jive"div></center>
     </div>
   </div>
   <br>
     <div class="row">
-    <div id="jump" class="col-md-5 col-md-offset-6">
+      <div id="Kakashi" class="col-md-5">
+        <center><div my-youtube code="Kakashi"div></div></center>
+      </div>
+      <div id="jive" class="col-md-5 col-md-offset-2">
+        <center><div my-youtube code="jive"div></div></center>
+      </div>
+    </div>
+  <br>
+    <div class="row">
+      <div id="Green" class="col-md-5">
+        <center><div my-youtube code="Green"></div></center>
+      </div>
+    <div id="jump" class="col-md-5 col-md-offset-2">
       <center><div my-youtube code="jump"></div></center>
     </div>
     </div>
-  </div>
+
 <script src='app.js'></script>
 </body>
 </html>
