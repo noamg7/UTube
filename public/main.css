@@ -1,6 +1,7 @@
 body{
   background-image: url(http://pre00.deviantart.net/e53b/th/pre/f/2012/193/6/e/minato_namikaze_render_by_kangaroogi-d56xob5.png);
   background-size: cover;
+  overflow-x: hidden;
 }
 input{
  width: 300px;
